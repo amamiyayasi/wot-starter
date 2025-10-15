@@ -37,6 +37,28 @@ Wot Starter
 
 - 🎉 [Alova](https://alova.js.org/zh-CN/) - 极致高效的请求工具集
 
+## 模版生成工具
+
+为了快速根据业务需求搭建页面或功能模块，项目内置了命令行模版生成器：
+
+```bash
+pnpm gen:template
+```
+
+运行后可在终端中完成以下操作：
+
+- 选择模版类型（页面模版 / 业务模块）。
+- 选择具体模版，例如「运营数据面板」「项目管理列表」「多步骤表单」等。
+- 输入目录英文名、导航标题，并决定是否加入 Tabbar。
+
+生成器会自动完成：
+
+- 将模版文件复制到 `src/pages` 或相关目录，自动替换占位符。
+- 更新 `src/pages.json` 中的路由配置，可选加入自定义 Tabbar。
+- 如果选择业务模块模版，会同步生成 Pinia Store 与示例接口文件，方便继续扩展。
+
+> 新增模版：在 `templates` 目录中新增子目录并编写 `meta.json` 描述即可被脚本识别。
+
 ## 鸣谢
 
 - [uni-helper](https://github.com/uni-helper) - 感谢 uni-helper 团队为 uni-app 开发体验优化做出的贡献。

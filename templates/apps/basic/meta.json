@@ -1,0 +1,4 @@
+{
+  "name": "业务功能模版",
+  "description": "包含页面、Pinia Store 与模拟接口的完整业务模块骨架。"
+}
