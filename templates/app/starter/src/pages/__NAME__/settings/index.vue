@@ -22,8 +22,8 @@ definePage({
   },
 })
 
-function togglePreference(prefKey: string, payload: any) {
-  const nextValue = typeof payload === 'boolean' ? payload : payload?.detail?.value
+function togglePreference(prefKey: string, payload: boolean | { value: boolean }) {
+  const nextValue = typeof payload === 'boolean' ? payload : payload?.value
   if (typeof nextValue === 'boolean')
     store.updatePreference(prefKey, nextValue)
 }
@@ -51,7 +51,7 @@ function handleColorSelect(color: string) {
             <wd-switch
               :model-value="item.value"
               size="18px"
-              @change="togglePreference(item.key, $event.detail.value)"
+              @change="togglePreference(item.key, $event.value)"
             />
           </template>
         </wd-cell>
