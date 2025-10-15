@@ -37,6 +37,30 @@ Wot Starter
 
 - 🎉 [Alova](https://alova.js.org/zh-CN/) - 极致高效的请求工具集
 
+## 模板生成器
+
+为了便于快速开始业务开发，项目内置了可交互的页面/应用模板生成器，支持输出带有示例数据、交互逻辑和样式的页面骨架。
+
+```bash
+pnpm new
+```
+
+1. 选择模板类型（`page` 或 `app`）。
+2. 根据命令行提示选择具体模板并输入名称、标题。
+3. 脚手架将自动在 `src/pages` 或相关目录下生成对应文件，并替换占位符（如 `__NAME__`、`__TITLE__`）。
+
+### 内置模板
+
+| 类型 | 标识 | 说明 | 主要输出 |
+| ---- | ---- | ---- | -------- |
+| page | `basic-page` | 展示型基础信息页，包含项目要点与操作按钮。 | `src/pages/<name>/index.vue` |
+| page | `list-page` | 带搜索、筛选和进度展示的数据列表页。 | `src/pages/<name>/index.vue` |
+| page | `form-page` | 含基础校验逻辑的需求采集表单页。 | `src/pages/<name>/index.vue` |
+| page | `news-page` | 新闻资讯页，提供顶部分类切换与图文列表布局。 | `src/pages/<name>/index.vue` |
+| app  | `starter-app` | 含仪表盘与设置页的双页面模块，集成 Pinia store 与模拟服务。 | `src/pages/<name>/**`, `src/store/use<Name>Store.ts` |
+
+生成后的文件仅作示例，请结合实际业务进行二次调整，例如补齐接口调用、替换静态数据或调整导航配置。
+
 ## 鸣谢
 
 - [uni-helper](https://github.com/uni-helper) - 感谢 uni-helper 团队为 uni-app 开发体验优化做出的贡献。

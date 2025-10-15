@@ -1,0 +1,44 @@
+{
+  "templates": [
+    {
+      "id": "basic-page",
+      "type": "page",
+      "name": "基础信息页",
+      "description": "用于展示项目简介、重点内容和常用操作的通用起始页面。",
+      "sourceDir": "templates/page/basic",
+      "outputDir": "src/pages/__NAME__"
+    },
+    {
+      "id": "list-page",
+      "type": "page",
+      "name": "数据列表页",
+      "description": "包含搜索、筛选和列表卡片的业务数据概览模板。",
+      "sourceDir": "templates/page/list",
+      "outputDir": "src/pages/__NAME__"
+    },
+    {
+      "id": "form-page",
+      "type": "page",
+      "name": "表单收集页",
+      "description": "支持表单校验、提交反馈的录入页面模板。",
+      "sourceDir": "templates/page/form",
+      "outputDir": "src/pages/__NAME__"
+    },
+    {
+      "id": "news-page",
+      "type": "page",
+      "name": "新闻资讯页",
+      "description": "包含顶部分类切换与列表卡片的资讯类页面。",
+      "sourceDir": "templates/page/news",
+      "outputDir": "src/pages/__NAME__"
+    },
+    {
+      "id": "starter-app",
+      "type": "app",
+      "name": "双页面基础应用",
+      "description": "创建包含仪表盘和设置页的基础业务模块，并附带 Pinia 状态和模拟数据。",
+      "sourceDir": "templates/app/starter",
+      "outputDir": "."
+    }
+  ]
+}
