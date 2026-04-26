@@ -57,7 +57,8 @@
     "release-major": "standard-version --release-as major",
     "release-minor": "standard-version --release-as minor",
     "release-patch": "standard-version --release-as patch",
-    "alova-gen": "alova gen -f"
+    "alova-gen": "alova gen -f",
+    "new": "node scripts/generate-template.mjs"
   },
   "dependencies": {
     "@alova/adapter-uniapp": "^2.0.14",
@@ -85,6 +86,7 @@
     "pinia": "^2.3.1",
     "uni-echarts": "^2.0.0",
     "vue": "~3.4.38",
+    "vue-router": "^4.4.3",
     "vue-i18n": "^9.14.0",
     "wot-design-uni": "^1.11.1"
   },
